@@ -37,14 +37,14 @@ local sections = {}
 -- Theme Variables
 local themes = {}
 local theme = {
-    accent = Color3.fromRGB(255,255,255),
+    accent = Color3.fromRGB(70,130,180),
     light_contrast = Color3.fromRGB(30, 30, 30),
     dark_contrast = Color3.fromRGB(20, 20, 20),
-    outline = Color3.fromRGB(255, 255, 255),
+    outline = Color3.fromRGB(0, 0, 0),
     inline = Color3.fromRGB(50, 50, 50),
     textcolor = Color3.fromRGB(255, 255, 255),
     textborder = Color3.fromRGB(0, 0, 0),
-    cursoroutline = Color3.fromRGB(255, 255, 255),
+    cursoroutline = Color3.fromRGB(10, 10, 10),
     font = 2,
     textsize = 13,
     UiBind = Enum.KeyCode.RightControl
@@ -783,7 +783,7 @@ do
             --
             spawn(function()
                 while wait(0.1) do
-                    watermark_title.Text = string.format("voidhook | public build | Ping : " .. tostring(library.shared.ping) .. "ms | FPS : " .. tostring(library.shared.fps), window.name)
+                    watermark_title.Text = string.format("voidhook | Public Test Build | Ping : " .. tostring(library.shared.ping) .. "ms | FPS : " .. tostring(library.shared.fps), window.name)
                     window.watermark:UpdateSize()
                 end
             end)
